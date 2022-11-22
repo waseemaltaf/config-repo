@@ -22,3 +22,8 @@ spring:
             - Path=/organization/**
           filters:
             - RewritePath=/organization/(?<path>.*), /$\{path}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
